@@ -1,16 +1,21 @@
-## Hi there 👋
+# Olá, Bem-vindo ao meu Perfil! 👋
 
-<!--
-**rafifa-bit/rafifa-bit** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Meu nome é **Rafael** e sou um entusiasta da tecnologia, atualmente cursando **Ciência da Computação** 👨‍💻.
 
-Here are some ideas to get you started:
+## Sobre Mim 🚀
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Atualmente, sou **estagiário na SEDUC**, onde tenho a oportunidade de aplicar meus conhecimentos em projetos práticos, com foco em **automações utilizando Python** 🐍.
+
+Tenho paixão por desenvolver soluções inovadoras e otimizar processos. Meus principais interesses e projetos incluem:
+
+* Inteligência Artificial 🤖
+* Automações de Fluxos de Trabalho ⚙️
+* Automações de Planilhas 📊
+* Análise de Dados 📈
+
+Estou sempre em busca de novos desafios e aprendizados na área de tecnologia!
+
+## Conecte-se Comigo 🔗
+* linkedin: rafael-vieiras
+* instagram: instagram.com/ravieu_?igsh=cnNmY2t2ZXhncjcz
+* email: rafael.baiaravi11@gmail.com
