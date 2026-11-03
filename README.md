@@ -1,27 +1,30 @@
 <img src="assets/diablo-cabecalho.svg" width="100%" alt="Rafael Vieira, tech lead and full-stack developer in Belém, Brazil. Open to remote work. Stay awhile and listen: I build what teams run on.">
 
-I build the software that runs [NÓS Soluções Sustentáveis](https://nossustentaveis.com), a company that supports family-farming cooperatives in the Amazon. The tech team is two people, so I design, code, review, deploy, and sit with the people who use it.
+I build the software that runs [NÓS Soluções Sustentáveis](https://nossustentaveis.com), a company that supports family-farming cooperatives in the Amazon. The tech team is two people, so I design, code, review, deploy, and sit with the people who use it. I also build AI features with the Claude and Gemini APIs: document reading and AI-generated dashboards and reports.
 
-The code is private, so here is what it does and how I built it.
+<a href="https://elo.nossustentaveis.com"><img src="https://img.shields.io/badge/ERP_N%C3%93S-elo.nossustentaveis.com-d4a84a?style=for-the-badge&labelColor=0b0a0d" alt="ERP NÓS: elo.nossustentaveis.com"></a>
+<a href="https://nossustentaveis.com"><img src="https://img.shields.io/badge/N%C3%93S-nossustentaveis.com-b3261e?style=for-the-badge&labelColor=0b0a0d" alt="NÓS Soluções Sustentáveis: nossustentaveis.com"></a>
+
+The code is private (the ERP needs a login), so here is what it does and how I built it.
 
 ### ▶ Quest log
 
 <p>
-<img src="assets/diablo-erp.svg" width="49%" alt="ERP NÓS, unique system: six modules, one database schema each, tested business rules. Built from October 2026.">
-<img src="assets/diablo-ia.svg" width="49%" alt="AI reader, rare scroll: reads scanned contracts, 30 of 30 items matched, checked by a person.">
+<a href="https://elo.nossustentaveis.com"><img src="assets/diablo-erp.svg" width="49%" alt="ERP NÓS, unique system: six modules, one database schema each, tested business rules. Built from October 2026."></a>
+<a href="https://elo.nossustentaveis.com"><img src="assets/diablo-ia.svg" width="49%" alt="AI reader, rare scroll: reads scanned contracts, 30 of 30 items matched, checked by a person."></a>
 </p>
 <p>
-<img src="assets/diablo-painel.svg" width="49%" alt="Dashboard, set item: one screen, cross filters, shareable links, with a map of the state.">
-<img src="assets/diablo-relatorios.svg" width="49%" alt="Reports, magic tome: one-click export to Word and Excel with the same charts as the screen, on brand.">
+<a href="https://elo.nossustentaveis.com"><img src="assets/diablo-painel.svg" width="49%" alt="Dashboard, set item: one screen, cross filters, shareable links, with a map of the state."></a>
+<a href="https://elo.nossustentaveis.com"><img src="assets/diablo-relatorios.svg" width="49%" alt="AI reports, magic tome: 29 charts, commentary written with the Claude API, every number checked, exported to Word and Excel."></a>
 </p>
 
-**ERP NÓS.** Built from zero starting October 2026: requests, finance, projects, field survey and an executive dashboard. Each module has its own Postgres schema, and business rules are pure functions with their own tests. Every screen follows the company's design system and is checked from 320px to 1920px wide.
+**[ERP NÓS](https://elo.nossustentaveis.com).** Built from zero starting October 2026: requests, finance, projects, field survey and an executive dashboard. Each module has its own Postgres schema, and business rules are pure functions with their own tests. Every screen follows the company's design system and is checked from 320px to 1920px wide.
 
-**AI contract reading.** Reads government food contracts, scanned PDFs included, and fills in buyer, products, quantities and prices. Every line is cross-checked (quantity × price = total) and a person confirms it on screen. It switches between models when one is overloaded. Paid billing comes before the first outside client, because contracts carry personal IDs.
+**AI document reading (Gemini API).** Reads government food contracts, scanned PDFs included, and fills in buyer, products, quantities and prices. Every line is cross-checked (quantity × price = total) and a person confirms it on screen. It switches between models when one is overloaded. Paid billing comes before the first outside client, because contracts carry personal IDs.
 
-**Strategic dashboard.** Power BI-style: a map of the state, production, seasonality and public-policy reach. It fits on one screen (tested at 1280×720), and clicking anything filters everything. Partner institutions get shareable branded links, with exports to PDF, Excel and Word.
+**AI-generated dashboards and reports (Claude API).** A cooperative survey spreadsheet goes in. A dashboard with 29 charts and a Word report come out, following the company's document manual, plus a spreadsheet with the image of each chart. The Claude API writes the commentary for every chart from facts already calculated, and each number it cites is checked against the data. If it invents a number, the text is requested again. On a second miss, an automatic text built only from correct numbers is used.
 
-**Branded reports.** One click makes a Word report that follows the company's document manual, plus a spreadsheet with one tab per theme and the image of each chart. Field spreadsheets go in through the API with idempotency keys, so running the import twice never duplicates a record.
+**Strategic dashboard.** Power BI-style: a map of the state, production, seasonality and public-policy reach. It fits on one screen (tested at 1280×720), and clicking anything filters everything. Partner institutions get shareable branded links, with exports to PDF, Excel and Word. Field spreadsheets go in through the API with idempotency keys, so running the import twice never duplicates a record.
 
 **Next level:** turning the contracts module into a SaaS product for cooperatives that sell to Brazil's national school-meals program (PNAE). Pricing tiers, data-ownership rules under Brazil's privacy law (LGPD) and the competition are already mapped.
 
@@ -36,7 +39,7 @@ The code is private, so here is what it does and how I built it.
 
 ### ▶ Inventory
 
-<img src="assets/diablo-inventario.svg" width="100%" alt="Inventory. Equipped: TypeScript, React, Vite, Cloudflare Workers, Supabase, PostgreSQL, Drizzle ORM, pnpm, Vitest, Gemini API. Stash: Python, Playwright, pandas, Streamlit, Plotly, Next.js, YOLO, Roboflow.">
+<img src="assets/diablo-inventario.svg" width="100%" alt="Inventory. Equipped: TypeScript, React, Vite, Cloudflare Workers, Supabase, PostgreSQL, Drizzle ORM, pnpm, Vitest, Claude API, Gemini API. Stash: Python, Playwright, pandas, Streamlit, Plotly, Next.js, YOLO, Roboflow.">
 
 ### ▶ Previous levels
 
@@ -54,6 +57,7 @@ The code is private, so here is what it does and how I built it.
 
 <a href="https://www.linkedin.com/in/rafael-vieiras"><img src="assets/diablo-start.svg" width="100%" alt="Press start to hire: contact Rafael on LinkedIn."></a>
 
+[![NÓS](https://img.shields.io/badge/N%C3%93S-nossustentaveis.com-0b0a0d?style=for-the-badge&logoColor=d4a84a)](https://nossustentaveis.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Rafael_Vieira-1a1c2c?style=for-the-badge&logo=linkedin&logoColor=a7f070)](https://www.linkedin.com/in/rafael-vieiras)
 [![Email](https://img.shields.io/badge/Email-rafael.baiaravi11%40gmail.com-1a1c2c?style=for-the-badge&logo=gmail&logoColor=ffcd75)](mailto:rafael.baiaravi11@gmail.com)
 
